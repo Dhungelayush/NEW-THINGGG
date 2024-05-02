@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banaune Ho - Login/Register</title>
+  <link type="text/css" rel="stylesheet" href="static/css/user-auth.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container" id="login-form-container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+      </form>
+    </div>
+    <div class="form-container" id="register-form-container" style="display: none;">
+      <h2>Register</h2>
+      <form id="register-form">
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        <p>Work with us? <a href="#" id="show-merchant">register your business</a></p>
+      </form>
+    </div>
+    <div class="form-container" id="merchant-form-container" style="display: none;">
+      <h2>Merchant Register</h2>
+      <form id="merchant-form">
+        <input type="text" name="email" placeholder="Email" required id="merchant-email">
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit" id="merchant-click">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </form>
+    </div>
+  </div>
+  
+</div>
+  <div id="loading-screen" class="loading-screen" style="display: none;">
+    <div class="loader"></div>
+  </div>
+  <script type="module" src="/static/java-script/user-auth-ui-manager.js"></script>
+</body>
+</html>

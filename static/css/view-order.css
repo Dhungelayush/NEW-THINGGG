@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(to bottom, #e2e1e1, #eeeded);
+    padding: 20px;
+  
+  }
+  
+  h1 {
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-size: 50px;
+  }
+  
+  #orderForm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  #orderForm label,
+  #orderForm input,
+  #orderForm select,
+  #orderForm button {
+    margin: 5px;
+  }
+  
+  /* Style the form input fields */
+  #orderNumber,
+  #area {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  #area {
+    width: 200px;
+  }
+  
+  /* Style the form submit button */
+  #orderForm button {
+    background-color: #00ff22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  /* Add hover effect to the button */
+  #orderForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  #orderDetails {
+    display: none;
+    margin-top: 20px;
+ 
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add animation to the order details section */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #orderDetails.active {
+    display: block;
+    animation: fadeIn 1s ease;
+  }
+  
+  #itemsList {
+    margin-left: 20px;
+  }
+  
+  /* Add more styles as per your requirements */
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    #orderForm {
+      flex-direction: column;
+    }
+  
+    #orderForm label,
+    #orderForm input,
+    #orderForm select,
+    #orderForm button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  /* Additional styles for order details section */
+  #orderDetails p {
+    margin: 5px;
+  }
+  
+  #orderDetails ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #orderDetails ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Center the order details section */
+  #orderDetails.active {
+    text-align: center;
+  }
+  .p{
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  

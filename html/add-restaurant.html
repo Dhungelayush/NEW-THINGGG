@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Restaurant</title>
+    <link type="text/css" rel="stylesheet" href="static/css/restaurant-upload.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.0/cloudinary-core-shrinkwrap.min.js"></script>
+  </head>
+  <body>
+    <h2>Add Restaurant</h2>
+    <form id="restaurantForm"  enctype="multipart/form-data" method="POST">
+      <label for="area">Area:</label>
+      <select id="area" name="area" required>
+        <!-- Options will be dynamically added from the areas JSON -->
+      </select>
+      <br />
+      <label for="restaurantName"> Name:</label>
+      <input type="text" id="restaurantName" name="restaurantName" required />
+      <br />
+      <label for="orderReceiveEmail">Order Receive Email:</label>
+      <input type="email" id="orderReceiveEmail" name="orderReceiveEmail" required />
+      <br />
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required />
+      <br />
+      <h3>Menu</h3>
+      <div id="menuItems">
+        <div>
+          <input type="text" class="itemName" placeholder="Item Name" required />
+          <input type="text" class="itemPrice" placeholder="Item Price" required />
+        </div>
+      </div>
+      <h3>Upload Restaurant Image</h3>
+      <input type="file" id="restaurantImage" name="restaurantImage" accept="image/*" required />
+      <br />
+      <br>
+      <div class="button-container">
+        <button type="button" onclick="addItem()">Add Another Item</button>
+        <input type="submit" value="Submit" class="submit" />
+      </div>
+    </form>
+    
+   
+    <script src="/static/java-script/upload-resturant.js"></script>
+  </body>
+</html>

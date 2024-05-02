@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Restaurant</title>
+  <link type="text/css"  rel="stylesheet" href="static/css/manage-restaurant.css">
+</head>
+
+<body>
+  <div id="loading-screen" >
+    <div class="loader"></div>
+    <p id="loading-message"></p>
+    <button id="close-loading-btn">Close</button>
+  </div>
+
+  <h1>Edit Your Portfolio</h1>
+  <div id="restaurant-selection">
+    <label for="select-restaurant">Select an Engineer:</label>
+    <select id="select-restaurant">
+      <option value="0">-- Select an Engineer --</option>
+      <!-- Restaurants will be dynamically populated here -->
+    </select>
+  </div>
+
+  <div id="owned-restaurants-container">
+    <!-- Restaurants will be dynamically populated here -->
+  </div>
+
+  <!-- Add your JavaScript file link here if you have a separate JS file -->
+  <script src="/static/java-script/manage-restaurant.js"></script>
+</body>
+
+</html>

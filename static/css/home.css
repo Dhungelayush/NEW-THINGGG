@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-image: url('electric-instruments-dark-background_23-2147743030.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 100px;
+ 
+  height: auto;
+  
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  /* Medium-sized screens and above */
+  .content h1 {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Small screens */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 60px;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content a {
+    font-size: 18px;
+    padding: 10px 50px;
+  }
+}
+.order:hover{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+li a:hover{
+  font-size: larger;
+  font-weight: bold;
+}@media (min-aspect-ratio: 16/9){
+  .back{
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+/* Adjustments for responsiveness */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  /* Small and medium screens */
+  nav {
+    flex-direction: row;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    margin-top: 15px;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+#upload-btn:hover{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+#manage,#login,#view{
+  margin-right: 15px;
+}
+
+              

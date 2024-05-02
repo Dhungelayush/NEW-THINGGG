@@ -1,0 +1,122 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background: white;
+  background-size: cover;
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 60px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  animation: 
+  typing 2s steps(19),
+  cursor .4s step-end infinite alternate ;
+  -webkit-text-stroke: 2px black;
+  text-shadow: black;
+}
+h3{
+  font-size: 20px;
+  color: azure;
+  margin-bottom: -30px;
+  -webkit-text-stroke: 2px #f3f0ed;
+  color: #ff7200;
+}
+.div1{
+  margin-top: 120px;
+  margin-left: 15%;
+}
+@keyframes cursor{
+50% { background-color: transparent;}
+}
+@keyframes typing{
+  from{ width: 0;}
+}
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.restaurant-item {
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-item:hover {
+  transform: translateY(-5px) scale(1.03); /* Add a slight scaling effect on hover */
+  border-color: #ff7200; /* Change border color on hover */
+}
+
+.restaurant-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff7200; /* Add border around the logo */
+  background-color: #f9f9f9; /* Add a background color for the logo container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+.restaurant-name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropdown menu */
+select {
+  width: 83%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #130f0f;
+  border-radius: 4px;
+  margin-left: -5px;
+  font-size: 28px;
+  background-color: #fff; /* Add a white background for better visibility */
+  color: #333; /* Set the text color to black */
+  outline: none; /* Remove default focus outline */
+  cursor: pointer; /* Change cursor on hover */
+  transition: border-color 0.3s; /* Add transition on border color change */
+}
+
+option{
+  text-align: center;
+  font-size: 15px;
+  color: #333; /* Set the text color to black */
+  transition: color 0.3s; /* Add transition on color change */
+}
+
+option:hover{
+  background-color: #ff7200; /* Add a background color on hover for better feedback */
+  color: #fff; /* Set the text color to white on hover */
+}
+
+/* Responsive styles */
+
+@media (max-width: 767px) {
+  .restaurant-item {
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 40px; /* Reduce font size for smaller screens */
+  }
+}
+.oop{
+  margin: 200px;
+}

@@ -1,0 +1,88 @@
+{
+  "orders": {
+    "Birtamode": {
+      "1418849": {
+        "area": "Birtamode",
+        "orderNumber": 1418849,
+        "orderDetails": [
+          {
+            "itemName": "Chicken Fired",
+            "itemPrice": 120
+          }
+        ],
+        "customerDetails": {
+          "phoneNumber": "43232321",
+          "address": "AAAAAAAAAA"
+        },
+        "restaurantName": "",
+        "orderStatus": "PENDING"
+      },
+      "5410907": {
+        "area": "Birtamode",
+        "orderNumber": 5410907,
+        "orderDetails": [
+          {
+            "itemName": "Chicken Fired",
+            "itemPrice": 120
+          }
+        ],
+        "customerDetails": {
+          "phoneNumber": "33",
+          "address": "31"
+        },
+        "restaurantName": "",
+        "orderStatus": "PENDING"
+      },
+      "6838101": {
+        "area": "Birtamode",
+        "orderNumber": 6838101,
+        "orderDetails": [
+          {
+            "itemName": "Momo",
+            "itemPrice": 120
+          }
+        ],
+        "customerDetails": {
+          "address": "Tam Tam tole"
+        },
+        "restaurantName": "",
+        "orderStatus": "PENDING"
+      },
+      "7183596": {
+        "area": "Birtamode",
+        "orderNumber": 7183596,
+        "orderDetails": [
+          {
+            "itemName": "Momo",
+            "itemPrice": 120
+          }
+        ],
+        "customerDetails": {
+          "address": "Tam Tam tole"
+        },
+        "restaurantName": "",
+        "orderStatus": "PENDING"
+      },
+      "8806347": {
+        "area": "Birtamode",
+        "orderNumber": 8806347,
+        "orderDetails": [
+          {
+            "itemName": "Chicken Fired",
+            "itemPrice": 120
+          },
+          {
+            "itemName": "Momo",
+            "itemPrice": 120
+          }
+        ],
+        "customerDetails": {
+          "phoneNumber": "21",
+          "address": "132sdsasd"
+        },
+        "restaurantName": "",
+        "orderStatus": "PROCESSING"
+      }
+    }
+  }
+}
